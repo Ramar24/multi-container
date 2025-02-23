@@ -27,7 +27,7 @@ jobs:
         run: zip -r deploy.zip . -x '*.git*'
 
       - name: Deploy to EB
-        uses: Ramar24/multi-container@v1
+        uses: Ramar24/multi-container@latest
 
         with:
           aws_access_key: ${{ secrets.AWS_ACCESS_KEY }}
